@@ -3,11 +3,27 @@
   <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rockpaperscissors Adventure</title>
-    <link rel="stylesheet" href="/screen.css">
+    <title>Rockpaperscissors</title>
+    <link rel="stylesheet" href="./screen.css">
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <script src="/main.js" charset="utf-8"></script>
+    <h1>Rock, Paper, Scissors!</h1>
+   
+    <section class="playerOne-container">
+      <p>Player One</p>
+      <button id="playerOneRock" type="button" onclick="playerOneSelectsRock()">Rock</button>
+      <button id="playerOnePaper" type="button" onclick="playerOneSelectsPaper()">Paper</button>
+      <button id="playerOneScissors" type="button" onclick="playerOneSelectsScissors()">Scissors</button>
+    </section>
+
+    <section class="computerPlayer-container">
+      <p>Play the Computer</p>
+      <button id="computerPlayerRock" type="button" onchange="computerPlayerSelectsRock()">Rock</button>
+      <button id="computerPlayerPaper" type="button" onchange="computerPlayerPaper()">Paper</button>
+      <button id="computerPlayerScissors" type="button" onchange="computerPlayerSelectsScissors()">Scissors</button>
+    </section>
+
+    <script src="./main.js" 
+    charset="utf-8"></script>
   </body>
 </html>
